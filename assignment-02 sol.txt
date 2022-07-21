@@ -1,0 +1,164 @@
+							Assignment-02 sol
+
+sol-1		#include<stdio.h>
+			int main()
+			{
+			 int n;
+			 printf("enter number: ");
+			 scanf("%d",&n);
+			 printf("unit digit of entered number n is %d",n%10);
+			 return 0;
+			}
+
+sol-2		#include<stdio.h>
+			int main()
+			{
+			 int n;
+			 printf("enter number: ");
+			 scanf("%d",&n);
+			 printf("number without last digit of entered number n is %d",n/10);
+			 return 0;
+			}
+
+sol-3		#include<stdio.h>
+			int main()
+			{
+			 int a,b,temp=0;
+			 printf("enter number a,b: ");
+			 scanf("%d %d",&a,&b);
+			 temp=a;
+			 a=b;
+			 b=temp;
+			 printf("swapped numbers are  %d and %d",a,b);
+			 return 0;
+			}
+
+sol-4		#include<stdio.h>
+			int main()
+			{
+			 int a,b;
+			 printf("enter number a,b: ");
+			 scanf("%d %d",&a,&b);
+			 a=a+b;
+			 b=a-b;
+			 a=a-b;
+			 printf("swapped numbers are  %d and %d",a,b);
+			 return 0;
+			}
+
+sol-5		#include<stdio.h>
+			int main()
+			{
+			 int n,d3,d2,d1,sum=0;
+			 printf("enter three digit number: ");
+			 scanf("%d",&n);
+			 d3=n%10;
+			 n=n/10;
+			 d2=n%10;
+			 n=n/10;
+			 d1=n;
+			 sum=d1+d2+d3;
+			 printf("sum of digits of number is %d",sum);
+			 return 0;
+			}
+
+sol-6		#include<stdio.h>
+			int main()
+			{
+			 char ch;
+			 printf("enter a character: ");
+			 scanf("%c",&ch);
+			 printf("ascii code of character %c is %d",ch,ch);
+			 return 0;
+			}
+
+sol-7        #include<stdio.h>
+			int main()
+			{
+			 int n;
+             printf("enter a number: ");
+             scanf("%d",&n);
+            if (n & 1)
+                printf("lsb is 1");
+                else
+                printf("lsb is 0");
+                return 0;
+            } 
+
+
+sol-8		#include<stdio.h>
+			int main()
+			{
+			 int n;
+             printf("enter a nuber");
+             scanf("%d",&n);
+             if(n & 1)
+             printf("odd number");
+             else 
+             printf("even number");
+                return 0;
+            }
+
+
+
+sol-9		#include<stdio.h>
+			int main()
+			{
+             char ch;
+			 int n;
+             float f;
+             double d;
+             printf("%d\n%d\n%d\n%d",sizeof(ch),sizeof(n),sizeof(f),sizeof(d));
+                return 0;
+            }
+			 
+			
+
+
+sol-10		#include<stdio.h>
+			int main()
+			{
+			 int n;
+			 printf("enter a number: ");
+			 scanf("%d",&n);
+			 n=n/10;
+			 n=n*10;
+			 printf("required number is %d",n);
+			 return 0;
+			}
+
+sol-11		#include<stdio.h>
+			int main()
+			{
+			 int a,b;
+			 printf("enter a number: ");
+                scanf("%d",&a);
+			 printf("enter a digit: "); 
+			 scanf("%d",&b);
+			 printf("resulting number is %d%d",a,b);
+			 return 0;
+			}
+
+sol-12		#include<stdio.h>
+			int main()
+			{
+			 float n;
+			 printf("enter INR amount: ");
+                scanf("%f",&n);
+			 printf("amount in USD is %f",n/76.23);
+			 return 0;
+			}
+
+sol-13		#include<stdio.h>
+			int main()
+			{
+			 int n,r;
+			 printf("enter three digit number: ");
+                scanf("%d",&n);
+			 r=n%10;
+			 n=n/10;
+			 n=n+(r*100);
+			 printf("rotated number towards right by one position is %d",n);
+			 return 0;
+			}	
+		
