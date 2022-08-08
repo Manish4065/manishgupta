@@ -1,0 +1,344 @@
+								Assignment-03 sol
+
+
+sol-1		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n>0)
+			{
+			printf("positive number");
+			}
+			else
+			{
+			printf("non positive");
+			}
+			return 0;
+			}
+
+sol-2		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n%5==0)
+			{
+			printf("divisible by 5");
+			}
+			else
+			{
+			printf("not divisible by 5");
+			}
+			return 0;
+			}
+
+sol-3		#include<stdio.h>
+			int main()
+			{
+			 int n;
+             printf("enter a nuber");
+             scanf("%d",&n);
+             if(n & 1)
+             printf("odd number");
+             else 
+             printf("even number");
+                return 0;
+              }
+
+sol-4		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n%2==0)
+			{
+			printf("even number");
+			}
+			else
+			{
+			printf("odd number");
+			}
+			return 0;
+			}
+
+sol-5		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n/1000==0)
+			{
+			printf("three digit number");
+			}
+			else
+			{
+			printf("not three digit number");
+			}
+			return 0;
+			}
+
+sol-6		#include<stdio.h>
+			int main()
+			{
+			int a,b;
+			printf("enter two number: ");
+			scanf("%d%d",&a,&b);
+			if(a>b)
+			printf("%d is greater than %d",a,b);
+			if(b>a)
+			printf("%d is greater than %d",b,a);
+			if(a==b)
+			printf("both numbers are equal");
+			return 0;
+			}
+
+sol-7	     #include <stdio.h>
+               int main()
+              {
+   			  float a, b, c, D;
+    			  printf ("enter three number a,b,c: ");
+   			  scanf("%f%f%f",&a,&b,&c);
+  			  D=b*b-4*a*c;
+   			  if(D>0)
+   			  printf("real and distinct");
+    			  if(D<0)
+   			  printf("imazinary");
+   			  else
+   			  printf("real and equal");
+   			  return 0;
+			}
+
+
+
+sol-8		#include<stdio.h>
+			int main()
+			{
+			int a;
+			printf("enter year: ");
+			scanf("%d",&a);
+			if(a%100==0)
+			{
+			if(a%400==0)
+			printf(" leap year");
+			else
+			printf(" not leap year");
+			}
+			else
+			{
+			if(a%4==0)
+			printf("leap year");
+			else
+			printf("not leap year");
+			}
+			return 0;
+			}	
+
+sol-9		#include <stdio.h>
+			int main()
+{
+     int a, b, c ;
+     printf ("enter three number a,b,c: ");
+     scanf("%d%d%d",&a,&b,&c);
+     if(a>b)
+     {
+        if(a>c)
+        printf("%d",a);
+        else
+        printf("%d",c);
+     }
+     else if(b>=c)
+     printf("%d",b);
+     else
+     printf("%d",c);
+     return 0;
+}
+
+
+
+sol-10		#include<stdio.h>
+			int main()
+			{
+			float a,b; ;
+			printf("enter cost and selling price: ");
+			scanf("%f%f",&a,&b);
+			if(b>=a)
+			{
+			printf("profit percentage is %f",((b-a)/a)*100);
+			}
+			else
+			printf("loss percentage is %f",((a-b)/a)*100);
+			return 0;
+			}
+
+sol-11		#include<stdio.h>
+			int main()
+			{
+			int m1,m2,m3,m4,m5;
+			float per;
+			printf("enter marks of five subject: ");
+			scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+			per=(m1+m2+m3+m4+m5)/5;
+			if(per>=33)
+			{
+			printf("passed");
+			}
+			else
+			{
+			printf("failed");
+			}
+			return 0;
+			}
+
+
+sol-12		#include <stdio.h>
+int main()
+{
+     char ch;
+     printf("enter a character: ");
+     scanf("%c",&ch);
+     if('a'<=ch && ch<='z')
+     printf("lowercase");
+     if('A'<=ch && ch<='Z')
+     printf("uppercase");
+     return 0;
+}
+
+
+sol-13		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n%3==0 && n%2==0)
+			{
+			printf("divisible by 3 and 2");
+			}
+			else
+			{
+			printf("not divisible by 3 and 2 ");
+			}
+			return 0;
+			}
+
+sol-14		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n%7==0 || n%3==0)
+			{
+			printf("divisible by 7 or 3");
+			}
+			else
+			{
+			printf("not divisible by 7 or 3 ");
+			}
+			return 0;
+			}
+
+sol-15		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter a number: ");
+			scanf("%d",&n);
+			if(n>0)
+			{
+			printf("positive number");
+			}
+			else
+			{
+			if(n<0)
+			printf("negative");
+			else
+			printf("zero");
+			}
+			return 0;
+			}
+
+
+sol-16 
+
+#include <stdio.h>
+int main()
+{
+     char ch;
+     printf("enter a character: ");
+     scanf("%c",&ch);
+     if('a'<=ch && ch<='z')
+     printf("lowercase");
+     else if('A'<=ch && ch<='Z')
+     printf("uppercase");
+     else if('0'<=ch && ch<='9')
+     printf("digit");
+     else
+     printf("special character");
+     return 0;
+}
+
+
+sol-17        #include<stdio.h>
+ int main()
+ {
+    int a,b,c;
+    printf("enter the sides of triangle: ");
+    scanf("%d%d%d",&a,&b,&c);
+    if ((a>=b&&b>=c || a>c&&c>b) && ((b+c)>a))
+    {
+    printf("valid triangle");
+    }
+    else if ((b>c&&c>a || b>a&&a>c) && ((a+c)>b))
+    {
+        printf("valid triangle");
+    }
+    else if ((c>b&&b>a || c>a&&a>b) && ((a+b)>c))
+    {
+       printf("valid triangle"); 
+    }
+    else
+    printf("invalid triangle");
+    return 0;
+    
+ }
+
+sol-18		#include<stdio.h>
+			int main()
+			{
+			int n;
+			printf("enter number: ");
+			scanf("%d",&n);
+			switch (n)
+			{
+			case 1:printf("january");
+				break;
+			case 2:printf("february");
+				break;
+			case 3:printf("march");
+				break;
+			case 4:printf("april");
+				break;
+			case 5:printf("may");
+				break;
+			case 6:printf("june");
+			break;
+			case 7:printf("july");
+				break;
+			case 8:printf("august");
+				break;
+			case 9:printf("september");
+				break;
+			case 10:printf("october");
+				break;
+			case 11:printf("november");
+				break;
+			case 12:printf("december");
+			}
+			return 0;
+			}
